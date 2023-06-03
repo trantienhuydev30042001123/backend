@@ -1,7 +1,7 @@
 #
 # Build stage
 #
-FROM gradle:7.6.0-openjdk-11 AS build
+FROM gradle:7.6-openjdk-11 AS build
 WORKDIR /app
 COPY . /app/
 RUN mvn clean package
