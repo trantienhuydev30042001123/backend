@@ -1,0 +1,16 @@
+#
+# Build stage
+#
+FROM gradle:2.7.7-openjdk-17 AS build
+WORKDIR /app
+COPY . /app/
+RUN mvn clean package
+
+#
+# Package stage
+#
+FROM openjdk:17-alpine
+WORKDIR /app
+COPY --from=build /app/target/*.jar /app/app.jar
+EXPOSE 8765
+ENTRYPOINT ["java","-jar","app.jar"]
