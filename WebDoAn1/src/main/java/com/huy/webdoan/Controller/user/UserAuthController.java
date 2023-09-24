@@ -27,7 +27,7 @@ import javax.validation.Valid;
 import java.util.HashSet;
 import java.util.Set;
 
-@CrossOrigin(origins = {"http://localhost:4200", "https://feda-c1fi.vercel.app/"}, maxAge = 3600)
+@CrossOrigin(origins = {"http://localhost:4200", "https://shopgiayhuytt.vercel.app"}, maxAge = 3600)
 @RestController
 @RequestMapping(Contanst.Api.Path.USER)
 @RequiredArgsConstructor
