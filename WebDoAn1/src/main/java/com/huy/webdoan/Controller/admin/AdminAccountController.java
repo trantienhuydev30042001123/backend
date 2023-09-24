@@ -24,7 +24,7 @@ import java.util.Set;
 
 import static com.huy.webdoan.config.PasswordGenerator.generateRandomPassword;
 
-@CrossOrigin(origins = {"http://localhost:4200", "https://shopgiayhuytt.vercel.app/home"}, maxAge = 3600)
+@CrossOrigin(origins = {"http://localhost:4200", "https://adminshophuytt.vercel.app/"}, maxAge = 3600)
 @RestController
 @RequestMapping(Contanst.Api.Path.ADMIN + "/account")
 @RequiredArgsConstructor
