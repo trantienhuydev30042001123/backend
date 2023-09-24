@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Optional;
-@CrossOrigin(origins = {"http://localhost:4200", "https://web-app-da.web.app/"}, maxAge = 3600)
+@CrossOrigin(origins = {"http://localhost:4200", "https://feda-c1fi.vercel.app/"}, maxAge = 3600)
 @RestController
 @RequestMapping(Contanst.Api.Path.USER + "/category")
 @RequiredArgsConstructor
